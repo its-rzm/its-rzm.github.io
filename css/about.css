@@ -1,0 +1,135 @@
+/* section statistik */
+
+.about__statistik {
+    margin-top: 3rem;
+}
+
+.about__statistik-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about__statistik-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.statistik__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.statistik__card {
+    background: var(--bg2);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.statistik__card:hover {
+    background: var(--bg2);
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+
+.statistik__icon {
+    background: var(--danger);
+    padding: 0.7rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.statistik__card:nth-child(2) .statistik__icon {
+    background: var(--success);
+}
+.statistik__card:nth-child(3) .statistik__icon {
+    background: var(--primary);
+}
+
+.statistik__card p {
+    margin-top: 1rem;
+}
+
+/* guru */
+.guru {
+    background: var(--bg1);
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+
+.guru__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.guru__member {
+    background: var(--bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.guru__member:hover {
+    background: transparent;
+    border-color: var(--primary);
+}
+
+.guru__member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.guru__member-info p {
+    color: var(--light);
+}
+
+/* media queries tablet */
+@media screen and (max-width: 1493px) {
+    .about__statistik {
+        margin-top: 2rem;
+    }
+
+    .about__statistik-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about__statistik-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .guru__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .guru__member {
+        padding: 1rem;
+    }
+
+}
+
+/* media queries mobile */
+@media screen and (max-width: 795px) {
+    .statistik__card {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .guru__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+    }
+
+    .guru__member {
+        padding: 0;
+    }
+
+    .guru__member p {
+        margin-bottom: 1.5rem;
+    }
+}

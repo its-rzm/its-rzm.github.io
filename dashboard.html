@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin SMA Bina Nusa Tara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                    <h2>BINUTA</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="./dashboard.html" class="active">
+                    <span class="material-symbols-sharp">grid_view</span>
+                    <h5>Dashboard</h5>
+                </a>
+                <a href="./manage.html">
+                    <span class="material-symbols-sharp">manage_accounts</span>
+                    <h5>Management User</h5>
+                </a>
+                <a href="./jurusan.html">
+                    <span class="material-symbols-sharp">auto_stories</span>
+                    <h5>Jurusan</h5>
+                </a>
+                <a href="./index.html">
+                    <span class="material-symbols-sharp">logout</span>
+                    <h5>Log Out</h5>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="statistik__cards">
+                <article class="statistik__card">
+                    <span class="statistik__icon">
+                        <i class="uil uil-airplay"></i>
+                    </span>
+                    <h3>152</h3>
+                    <p>Guru</p>
+                </article>
+                <article class="statistik__card">
+                    <span class="statistik__icon">
+                        <i class="uil uil-users-alt"></i>
+                    </span>
+                    <h3>3556</h3>
+                    <p>Murid</p>
+                </article>
+                <article class="statistik__card">
+                    <span class="statistik__icon">
+                        <i class="uil uil-user-md"></i>
+                    </span>
+                    <h3>120</h3>
+                    <p>Staff</p>
+                </article>
+            </div>
+
+            <div class="recent-user">
+                <h2>User Log</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usename</th>
+                            <th>Role</th>
+                            <th>IP Address</th>
+                            <th>Last Login</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>adminmaliki21</td>
+                            <td class="success">administrator</td>
+                            <td>192.168.21.2</td>
+                            <td>07-15-2022</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>saprudinsma</td>
+                            <td class="warning">guru</td>
+                            <td>203.401.23.2</td>
+                            <td>07-14-2022</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>jumatunhasanah</td>
+                            <td class="warning">guru</td>
+                            <td>103.203.1.23</td>
+                            <td>07-14-2022</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>adminham</td>
+                            <td class="success">administrator</td>
+                            <td>1.1.1.1</td>
+                            <td>07-13-2022</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer_logo"><h4>SMA Bina Nusa Tara</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, voluptatibus?</p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Sitemaps Front</h4>
+                <ul class="sitemaps">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Login.html">Login Page</a></li>
+                    <li><a href="regist.html">Register Page</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Sitemaps Admin</h4>
+                <ul class="privacy">
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="manage.html">Management User</a></li>
+                    <li><a href="createUser.html">Create User Page</a></li>
+                    <li><a href="updateUser.html">Update User Page</a></li>
+                    <li><a href="webedit.html">Web Edit Page</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+6283877156358</p>
+                    <p>muhammad.maulana026@binus.ac.id</p>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="footer__copyright">
+            <small>Made with ♡ by Muhammad Rikhza Maulana </small>
+        </div>
+    </footer> -->
+
+    <script src="./main.js"></script>
+</body>
+</html>

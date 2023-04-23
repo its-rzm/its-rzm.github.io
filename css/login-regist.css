@@ -1,0 +1,82 @@
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login__container {
+    margin: 0 auto;
+    padding: 4rem;
+    height: 35rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.regist__container {
+    margin: 0 auto;
+    padding: 4rem;
+    height: 54rem;
+    width: 28rem;
+    border-radius: 1rem;
+}
+
+.signin, .signup {
+    color: var(--white);
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(30px);
+}
+
+.login__container h1, .regist__container h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login__container img, .regist__container img {
+    width: 7rem;
+    margin: auto;
+}
+
+.login__container form input, textarea, .regist__container form input, textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.login__container form input::placeholder, textarea::placeholder, .regist__container form input::placeholder, textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
+
+.login__container form input[type="submit"], .regist__container form input[type="submit"] {
+    background: var(--bg2);
+    transition: var(--transition);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.login__container form input[type="submit"]:hover, .regist__container form input[type="submit"]:hover {
+    opacity: 0.0;
+}
+
+.login__container form small, .regist__container form small {
+    display: block;
+    margin-top: 1rem;
+    opacity: 0.7;
+}
+
+.login__container form small a, .regist__container form small a {
+    font-weight: bold;
+    cursor: pointer;
+}
